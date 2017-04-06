@@ -1,0 +1,2598 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/RIAEvangelist/node-dominos-pizza-api">dominos (v2.1.1)</a>
+</h1>
+<h4>node js API for Domino's pizza</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos">module dominos</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Address">
+            function <span class="apidocSignatureSpan">dominos.</span>Address
+            <span class="apidocSignatureSpan">(parameters)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Coupon">
+            function <span class="apidocSignatureSpan">dominos.</span>Coupon
+            <span class="apidocSignatureSpan">(parameters)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Customer">
+            function <span class="apidocSignatureSpan">dominos.</span>Customer
+            <span class="apidocSignatureSpan">(parameters)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Item">
+            function <span class="apidocSignatureSpan">dominos.</span>Item
+            <span class="apidocSignatureSpan">(parameters)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Menu">
+            function <span class="apidocSignatureSpan">dominos.</span>Menu
+            <span class="apidocSignatureSpan">(menuData)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuCategory">
+            function <span class="apidocSignatureSpan">dominos.</span>MenuCategory
+            <span class="apidocSignatureSpan">(menuData, parentCategory)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuItem">
+            function <span class="apidocSignatureSpan">dominos.</span>MenuItem
+            <span class="apidocSignatureSpan">(menuData)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Order">
+            function <span class="apidocSignatureSpan">dominos.</span>Order
+            <span class="apidocSignatureSpan">(parameters)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Store">
+            function <span class="apidocSignatureSpan">dominos.</span>Store
+            <span class="apidocSignatureSpan">(parameters)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">dominos.</span>Menu.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">dominos.</span>MenuCategory.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">dominos.</span>MenuItem.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">dominos.</span>Order.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">dominos.</span>Store.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">dominos.</span>Track</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">dominos.</span>Util</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">dominos.</span>http_json</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.Menu">module dominos.Menu</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Menu.Menu">
+            function <span class="apidocSignatureSpan">dominos.</span>Menu
+            <span class="apidocSignatureSpan">(menuData)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.Menu.prototype">module dominos.Menu.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Menu.prototype.buildCategories">
+            function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>buildCategories
+            <span class="apidocSignatureSpan">(categoryData, parent)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Menu.prototype.getCouponCategory">
+            function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>getCouponCategory
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Menu.prototype.getFoodCategory">
+            function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>getFoodCategory
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Menu.prototype.getItemByCode">
+            function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>getItemByCode
+            <span class="apidocSignatureSpan">(code)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Menu.prototype.getPreconfiguredCategory">
+            function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>getPreconfiguredCategory
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Menu.prototype.getRaw">
+            function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>getRaw
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Menu.prototype.parseItems">
+            function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>parseItems
+            <span class="apidocSignatureSpan">(parentMenuData, ParseClass)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Menu.prototype.parseMenu">
+            function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>parseMenu
+            <span class="apidocSignatureSpan">(menuData)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.MenuCategory">module dominos.MenuCategory</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuCategory.MenuCategory">
+            function <span class="apidocSignatureSpan">dominos.</span>MenuCategory
+            <span class="apidocSignatureSpan">(menuData, parentCategory)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.MenuCategory.prototype">module dominos.MenuCategory.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuCategory.prototype.getCategoryPath">
+            function <span class="apidocSignatureSpan">dominos.MenuCategory.prototype.</span>getCategoryPath
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuCategory.prototype.getCode">
+            function <span class="apidocSignatureSpan">dominos.MenuCategory.prototype.</span>getCode
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuCategory.prototype.getDescription">
+            function <span class="apidocSignatureSpan">dominos.MenuCategory.prototype.</span>getDescription
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuCategory.prototype.getName">
+            function <span class="apidocSignatureSpan">dominos.MenuCategory.prototype.</span>getName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuCategory.prototype.getProducts">
+            function <span class="apidocSignatureSpan">dominos.MenuCategory.prototype.</span>getProducts
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuCategory.prototype.getSubcategories">
+            function <span class="apidocSignatureSpan">dominos.MenuCategory.prototype.</span>getSubcategories
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.MenuItem">module dominos.MenuItem</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuItem.MenuItem">
+            function <span class="apidocSignatureSpan">dominos.</span>MenuItem
+            <span class="apidocSignatureSpan">(menuData)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.MenuItem.prototype">module dominos.MenuItem.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuItem.prototype.getCategories">
+            function <span class="apidocSignatureSpan">dominos.MenuItem.prototype.</span>getCategories
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuItem.prototype.getCode">
+            function <span class="apidocSignatureSpan">dominos.MenuItem.prototype.</span>getCode
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuItem.prototype.getDescription">
+            function <span class="apidocSignatureSpan">dominos.MenuItem.prototype.</span>getDescription
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuItem.prototype.getName">
+            function <span class="apidocSignatureSpan">dominos.MenuItem.prototype.</span>getName
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.MenuItem.prototype.setCategories">
+            function <span class="apidocSignatureSpan">dominos.MenuItem.prototype.</span>setCategories
+            <span class="apidocSignatureSpan">(categories)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.Order">module dominos.Order</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Order.Order">
+            function <span class="apidocSignatureSpan">dominos.</span>Order
+            <span class="apidocSignatureSpan">(parameters)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.Order.prototype">module dominos.Order.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Order.prototype.PaymentObject">
+            function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>PaymentObject
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Order.prototype.addCoupon">
+            function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>addCoupon
+            <span class="apidocSignatureSpan">(Coupon)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Order.prototype.addItem">
+            function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>addItem
+            <span class="apidocSignatureSpan">(Item)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Order.prototype.mergeResponse">
+            function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>mergeResponse
+            <span class="apidocSignatureSpan">(callback, response)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Order.prototype.place">
+            function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>place
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Order.prototype.price">
+            function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>price
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Order.prototype.removeCoupon">
+            function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>removeCoupon
+            <span class="apidocSignatureSpan">(Coupon)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Order.prototype.removeItem">
+            function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>removeItem
+            <span class="apidocSignatureSpan">(Item)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Order.prototype.validate">
+            function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>validate
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Order.prototype.validateCC">
+            function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>validateCC
+            <span class="apidocSignatureSpan">(number)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.Store">module dominos.Store</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Store.Store">
+            function <span class="apidocSignatureSpan">dominos.</span>Store
+            <span class="apidocSignatureSpan">(parameters)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.Store.prototype">module dominos.Store.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Store.prototype.getFriendlyNames">
+            function <span class="apidocSignatureSpan">dominos.Store.prototype.</span>getFriendlyNames
+            <span class="apidocSignatureSpan">(callback, lang)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Store.prototype.getInfo">
+            function <span class="apidocSignatureSpan">dominos.Store.prototype.</span>getInfo
+            <span class="apidocSignatureSpan">(callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Store.prototype.getMenu">
+            function <span class="apidocSignatureSpan">dominos.Store.prototype.</span>getMenu
+            <span class="apidocSignatureSpan">(callback, lang, noCache)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.Track">module dominos.Track</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Track.byId">
+            function <span class="apidocSignatureSpan">dominos.Track.</span>byId
+            <span class="apidocSignatureSpan">(storeID, orderKey, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Track.byPhone">
+            function <span class="apidocSignatureSpan">dominos.Track.</span>byPhone
+            <span class="apidocSignatureSpan">(phone, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Track.byUrl">
+            function <span class="apidocSignatureSpan">dominos.Track.</span>byUrl
+            <span class="apidocSignatureSpan">(url, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.Util">module dominos.Util</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.Util.findNearbyStores">
+            function <span class="apidocSignatureSpan">dominos.Util.</span>findNearbyStores
+            <span class="apidocSignatureSpan">(address, pickUpType, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.dominos.http_json">module dominos.http_json</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.http_json.get">
+            function <span class="apidocSignatureSpan">dominos.http_json.</span>get
+            <span class="apidocSignatureSpan">(url, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.dominos.http_json.post">
+            function <span class="apidocSignatureSpan">dominos.http_json.</span>post
+            <span class="apidocSignatureSpan">(url, req, callback)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos" id="apidoc.module.dominos">module dominos</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Address" id="apidoc.element.dominos.Address">
+        function <span class="apidocSignatureSpan">dominos.</span>Address
+        <span class="apidocSignatureSpan">(parameters)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Address = function (parameters) {
+    Object.defineProperties(
+        this,
+        {
+            parse:{
+                value:parse,
+                enumerable:true,
+                writable:false
+            },
+            getAddressLines:{
+                value:getAddressLines,
+                enumerable:true,
+                writable:false
+            },
+            Type:{
+                value:'House',
+                enumerable:true,
+                writable:true
+            },
+            Street:{
+                value:'',
+                enumerable:true,
+                writable:true
+            },
+            City:{
+                value:'',
+                enumerable:true,
+                writable:true
+            },
+            Region:{
+                value:'',
+                enumerable:true,
+                writable:true
+            },
+            PostalCode:{
+                value:'',
+                enumerable:true,
+                writable:true
+            },
+            _init:{
+                value:init,
+                enumerable:false,
+                writable:false
+            },
+            _parameters:{
+                value:parameters,
+                enumerable:false,
+                writable:false
+            }
+        }
+    );
+
+    this._init();
+
+    function init(){
+        if (typeof this._parameters == 'object' &amp;&amp; this._parameters.PostalCode) {
+            this.Street = this._parameters.Street;
+            this.City = this._parameters.City;
+            this.Region = this._parameters.Region;
+            this.PostalCode = this._parameters.PostalCode;
+        }
+
+
+
+        if (util.isArray(this._parameters)) {
+            this.Street = this._parameters[0];
+            this.City = this._parameters[1];
+            this.Region = this._parameters[2];
+            this.PostalCode = this._parameters[3];
+        }
+
+        if (typeof this._parameters == 'number') {
+            this._parameters+='';
+        }
+
+        if (typeof this._parameters == 'string') {
+            this.parse(this._parameters);
+        }
+
+        if (this._parameters.Type) {
+            this.Type = this._parameters.Type;
+        }
+    }
+
+    function parse(locationString) {
+        var splitAddress = locationString.split(',');
+
+        for (var i in splitAddress) {
+            splitAddress[i] = splitAddress[i].trim();
+        }
+
+        this.PostalCode= splitAddress[splitAddress.length-1]
+
+        //need better intellegence for auto determining address parts
+        //added some, should externalize it
+        //while not perfect, it does seem to get most of the right stuff
+        //in good enough places for dominos to like it.
+        switch (splitAddress.length) {
+            case 1:
+                if (!this.PostalCode) {
+                    this.PostalCode='';
+                    this.City = splitAddress[0];
+                }
+                break;
+            case 2:
+                if(splitAddress[0].length&lt;3){
+                    this.Region = splitAddress[0];
+                }else{
+                    this.City = splitAddress[0];
+                }
+                if (!this.PostalCode) {
+                    if(splitAddress[1].length&gt;2){
+                        if(this.City){
+                            this.Street = this.City;
+                        }
+                        this.City = splitAddress[1];
+                    }else{
+                        if(this.Region){
+                            this.City=this.Region;
+                        }
+                        this.Region = splitAddress[1];
+                    }
+                }
+                break;
+            case 3:
+                if(splitAddress[0].length&lt;3){
+                    this.Region = splitAddress[0];
+                }else{
+                    this.City = splitAddress[0];
+                }
+
+                if(splitAddress[1].length&lt;3){
+                    if(this.Region){
+                        if(this.City){
+                            this.Street = this.City;
+                        }
+                        this.City=this.Region;
+                    } ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Coupon" id="apidoc.element.dominos.Coupon">
+        function <span class="apidocSignatureSpan">dominos.</span>Coupon
+        <span class="apidocSignatureSpan">(parameters)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Coupon = function (parameters) {
+    this.Code = parameters.code;
+    this.Qty = parameters.quantity ? parameters.quantity : 1;
+    this.ID = 1;
+    this.isNew = true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Customer" id="apidoc.element.dominos.Customer">
+        function <span class="apidocSignatureSpan">dominos.</span>Customer
+        <span class="apidocSignatureSpan">(parameters)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Customer = function (parameters) {
+    this.ID = '';
+    // These are named with camelCase because Dominos API uses this format
+    if(!parameters){
+        parameters={
+            firstName:'',
+            lastName:'',
+            email:'',
+            phone:''
+        }
+    }
+    this.firstName = parameters.firstName;
+    this.lastName = parameters.lastName;
+    this.email = parameters.email;
+    this.address = parameters.address;
+    this.phone = parameters.phone;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+### creating an order
+
+```javascript
+
+var pizzapi = require('dominos');
+
+var thePresident = new pizzapi.<span class="apidocCodeKeywordSpan">Customer</span>(
+    {
+        firstName: 'Barack',
+        lastName: 'Obama',
+        address: '700 Pennsylvania Avenue, Washington, DC',
+        email: 'barack@whitehouse.gov'
+    }
+);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Item" id="apidoc.element.dominos.Item">
+        function <span class="apidocSignatureSpan">dominos.</span>Item
+        <span class="apidocSignatureSpan">(parameters)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Item = function (parameters) {
+    if(!parameters){
+        parameters={}
+    }
+
+    this.AutoRemove=false;
+
+    this.Code = parameters.code||null;
+    this.Qty = parameters.quantity||1;
+    this.ID = 1;
+
+    this.isNew = true;
+    this.Options = { 'C': {'1/1': '1'}, 'X': {'1/1': '1'} };
+
+    if(parameters.options) {
+        for (var i=0; i&lt;parameters.options.length; i++) {
+            this.Options[parameters.options[i]] = { '1/1': '1' };
+        }
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+### Adding a product to the order :
+
+```javascript
+
+order.addItem(
+    new pizzapi.<span class="apidocCodeKeywordSpan">Item</span>(
+        {
+            code: '14SCREEN',
+            options: [],
+            quantity: 1
+        }
+    )
+);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Menu" id="apidoc.element.dominos.Menu">
+        function <span class="apidocSignatureSpan">dominos.</span>Menu
+        <span class="apidocSignatureSpan">(menuData)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Menu = function (menuData) {
+    if(!menuData) {
+        menuData={};
+    } else {
+        this.parseMenu(menuData);
+    }
+    this.menuData = menuData;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuCategory" id="apidoc.element.dominos.MenuCategory">
+        function <span class="apidocSignatureSpan">dominos.</span>MenuCategory
+        <span class="apidocSignatureSpan">(menuData, parentCategory)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">MenuCategory = function (menuData, parentCategory) {
+    if(!menuData) menuData={};
+
+    this.menuData = menuData;
+    this.subcategories = [];
+    this.products = [];
+    this.parent = parentCategory;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuItem" id="apidoc.element.dominos.MenuItem">
+        function <span class="apidocSignatureSpan">dominos.</span>MenuItem
+        <span class="apidocSignatureSpan">(menuData)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">MenuItem = function (menuData) {
+    if(!menuData) menuData={};
+
+    this.menuData = menuData;
+    this.categories = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Order" id="apidoc.element.dominos.Order">
+        function <span class="apidocSignatureSpan">dominos.</span>Order
+        <span class="apidocSignatureSpan">(parameters)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Order = function (parameters) {
+  if(!parameters){
+      parameters={}
+  }
+  //default order
+  this.Address = '';
+  this.Coupons = [];
+  this.CustomerID = '';
+  this.Email = '';
+  this.Extension = '';
+  this.FirstName = '';
+  this.LastName = '';
+  this.LanguageCode = 'en';
+  this.OrderChannel = 'OLO';
+  this.OrderID = '';
+  this.OrderMethod = 'Web';
+  this.OrderTaker = null;
+  this.Payments = [];
+  this.Phone = '';
+  this.Products = [];
+  this.Market = '';
+  this.Currency = '';
+  this.ServiceMethod = parameters.deliveryMethod || 'Delivery';
+  this.SourceOrganizationURI = urls.sourceUri;
+  this.StoreID = parameters.storeID||'';
+  this.Tags = {};
+  this.Version = '1.0';
+  this.NoCombine = true;
+  this.Partners = {};
+  this.NewUser = true;
+  this.metaData = {};
+  this.Amounts = {};
+  this.BusinessDate = '';
+  this.EstimatedWaitMinutes = '';
+  this.PriceOrderTime = '';
+  this.AmountsBreakdown;
+
+  if(parameters['customer']) {
+    var Customer = parameters.customer;
+
+    this.Address = Customer.address;
+    this.CustomerID = Customer.ID;
+    this.Email = Customer.email;
+    this.FirstName = Customer.firstName;
+    this.LastName = Customer.lastName;
+    this.Phone = Customer.phone;
+    return this;
+  }
+  if(parameters['Order'] || parameters['order']) {  //Used to initialize order object from Dominos results (Also handy for initializing
+ from DB)
+    var prevOrder = parameters.Order;
+    var Customer = parameters.customer;
+
+    this.Address = (Customer)? (
+        (Customer.address)? Customer.address : prevOrder.Address
+    ):prevOrder.Address;
+
+    this.CustomerID = (Customer)? (
+        (Customer.address)? Customer.ID : prevOrder.CustomerID
+    ):prevOrder.CustomerID;
+
+    this.Email = (Customer)? (
+        (Customer.address)? Customer.email : prevOrder.Email
+    ):prevOrder.Email;
+
+    this.FirstName = (Customer)? (
+        (Customer.address)? Customer.firstName : prevOrder.FirstName
+    ):prevOrder.FirstName;
+
+    this.LastName = (Customer)? (
+        (Customer.address)? Customer.lastName : prevOrder.LastName
+    ):prevOrder.LastName;
+
+    this.OrderID = prevOrder.OrderID;
+    this.Products = prevOrder.Products;
+    this.Market = prevOrder.Market;
+    this.Currency = prevOrder.Currency;
+    this.StoreID = prevOrder.StoreID;
+    this.Amounts = prevOrder.Amounts || {};
+    this.BusinessDate = prevOrder.BusinessDate || '';
+    this.EstimatedWaitMinutes = prevOrder.EstimatedWaitMinutes || '';
+    this.PriceOrderTime = prevOrder.PriceOrderTime || '';
+    this.AmountsBreakdown = prevOrder.AmountsBreakdown || {};
+
+    return this;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+firstName: 'Barack',
+lastName: 'Obama',
+address: '700 Pennsylvania Avenue, Washington, DC',
+email: 'barack@whitehouse.gov'
+      }
+  );
+
+  var order = new pizzapi.<span class="apidocCodeKeywordSpan">Order</span>(
+      {
+customer: thePresident,
+
+//optional set the store ID right away
+storeID: myStore.ID,
+
+deliveryMethod: 'Delivery' //(or 'Carryout')
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Store" id="apidoc.element.dominos.Store">
+        function <span class="apidocSignatureSpan">dominos.</span>Store
+        <span class="apidocSignatureSpan">(parameters)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Store = function (parameters) {
+    this.ID = parameters.ID;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+|--------|----|-------|--------|
+|ID      |Integer|null|true    |
+
+```javascript
+
+//Get Store Info for Store #4336
+var pizzapi = require('dominos');
+var myStore = new pizzapi.<span class="apidocCodeKeywordSpan">Store</span>();
+myStore.ID=4336;
+
+myStore.getInfo(
+    function(storeData){
+        console.log(storeData);
+    }
+);
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.Menu" id="apidoc.module.dominos.Menu">module dominos.Menu</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Menu.Menu" id="apidoc.element.dominos.Menu.Menu">
+        function <span class="apidocSignatureSpan">dominos.</span>Menu
+        <span class="apidocSignatureSpan">(menuData)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Menu = function (menuData) {
+    if(!menuData) {
+        menuData={};
+    } else {
+        this.parseMenu(menuData);
+    }
+    this.menuData = menuData;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.Menu.prototype" id="apidoc.module.dominos.Menu.prototype">module dominos.Menu.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Menu.prototype.buildCategories" id="apidoc.element.dominos.Menu.prototype.buildCategories">
+        function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>buildCategories
+        <span class="apidocSignatureSpan">(categoryData, parent)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">buildCategories = function (categoryData, parent) {
+    var category = new MenuCategory(categoryData,parent);
+    for (var subIndex in categoryData.Categories) {
+        category.getSubcategories().push(this.buildCategories(categoryData.Categories[subIndex],category));
+    }
+    categoryData.Products.forEach((function(productCode) { //link up products and categories
+        var product = this.menuByCode[productCode];
+        if (!product) {
+            console.log("PRODUCT NOT FOUND: "+productCode,category.getCode());
+            return;
+        }
+        category.getProducts().push(product);
+        product.getCategories().push(category);
+    }).bind(this));
+    return category;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Menu.prototype.getCouponCategory" id="apidoc.element.dominos.Menu.prototype.getCouponCategory">
+        function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>getCouponCategory
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getCouponCategory = function () {
+    return this.rootCategories["Coupons"];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Menu.prototype.getFoodCategory" id="apidoc.element.dominos.Menu.prototype.getFoodCategory">
+        function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>getFoodCategory
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getFoodCategory = function () {
+    return this.rootCategories["Food"];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Menu.prototype.getItemByCode" id="apidoc.element.dominos.Menu.prototype.getItemByCode">
+        function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>getItemByCode
+        <span class="apidocSignatureSpan">(code)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getItemByCode = function (code) {
+    return this.menuByCode[code];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Menu.prototype.getPreconfiguredCategory" id="apidoc.element.dominos.Menu.prototype.getPreconfiguredCategory">
+        function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>getPreconfiguredCategory
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getPreconfiguredCategory = function () {
+    return this.rootCategories["PreconfiguredProducts"];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Menu.prototype.getRaw" id="apidoc.element.dominos.Menu.prototype.getRaw">
+        function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>getRaw
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getRaw = function () {
+    return this.menuData;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Menu.prototype.parseItems" id="apidoc.element.dominos.Menu.prototype.parseItems">
+        function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>parseItems
+        <span class="apidocSignatureSpan">(parentMenuData, ParseClass)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parseItems = function (parentMenuData, ParseClass) {
+    var items = [];
+    Object.keys(parentMenuData).forEach((function(code) {
+        var menuData = parentMenuData[code];
+        var obj = new ParseClass(menuData);
+        this.menuByCode[obj.getCode()] = obj;
+        items.push(obj);
+    }).bind(this));
+    return items;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Menu.prototype.parseMenu" id="apidoc.element.dominos.Menu.prototype.parseMenu">
+        function <span class="apidocSignatureSpan">dominos.Menu.prototype.</span>parseMenu
+        <span class="apidocSignatureSpan">(menuData)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parseMenu = function (menuData) {
+    this.menuByCode = {};
+    var products = this.parseItems(menuData.result.Products,MenuItem);
+    var coupons = this.parseItems(menuData.result.Coupons,MenuItem);
+    var preconfigured = this.parseItems(menuData.result.PreconfiguredProducts,MenuItem);
+
+    this.rootCategories = {}; //generate category tree using MenuCategory objects
+    for (var categoryType in menuData.result.Categorization) {
+        var categoryData = menuData.result.Categorization[categoryType];
+        this.rootCategories[categoryType] = this.buildCategories(categoryData);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.MenuCategory" id="apidoc.module.dominos.MenuCategory">module dominos.MenuCategory</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuCategory.MenuCategory" id="apidoc.element.dominos.MenuCategory.MenuCategory">
+        function <span class="apidocSignatureSpan">dominos.</span>MenuCategory
+        <span class="apidocSignatureSpan">(menuData, parentCategory)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">MenuCategory = function (menuData, parentCategory) {
+    if(!menuData) menuData={};
+
+    this.menuData = menuData;
+    this.subcategories = [];
+    this.products = [];
+    this.parent = parentCategory;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.MenuCategory.prototype" id="apidoc.module.dominos.MenuCategory.prototype">module dominos.MenuCategory.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuCategory.prototype.getCategoryPath" id="apidoc.element.dominos.MenuCategory.prototype.getCategoryPath">
+        function <span class="apidocSignatureSpan">dominos.MenuCategory.prototype.</span>getCategoryPath
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getCategoryPath = function () {
+    var result = this.parent !== undefined ? this.parent.getCategoryPath().concat([this.menuData.Code]) : [this.menuData.Code];
+    return result;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuCategory.prototype.getCode" id="apidoc.element.dominos.MenuCategory.prototype.getCode">
+        function <span class="apidocSignatureSpan">dominos.MenuCategory.prototype.</span>getCode
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getCode = function () {
+    return this.menuData.Code;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuCategory.prototype.getDescription" id="apidoc.element.dominos.MenuCategory.prototype.getDescription">
+        function <span class="apidocSignatureSpan">dominos.MenuCategory.prototype.</span>getDescription
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDescription = function () {
+    return this.menuData.Description;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuCategory.prototype.getName" id="apidoc.element.dominos.MenuCategory.prototype.getName">
+        function <span class="apidocSignatureSpan">dominos.MenuCategory.prototype.</span>getName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getName = function () {
+    return this.menuData.Name;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuCategory.prototype.getProducts" id="apidoc.element.dominos.MenuCategory.prototype.getProducts">
+        function <span class="apidocSignatureSpan">dominos.MenuCategory.prototype.</span>getProducts
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getProducts = function () {
+    return this.products;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuCategory.prototype.getSubcategories" id="apidoc.element.dominos.MenuCategory.prototype.getSubcategories">
+        function <span class="apidocSignatureSpan">dominos.MenuCategory.prototype.</span>getSubcategories
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getSubcategories = function () {
+    return this.subcategories;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.MenuItem" id="apidoc.module.dominos.MenuItem">module dominos.MenuItem</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuItem.MenuItem" id="apidoc.element.dominos.MenuItem.MenuItem">
+        function <span class="apidocSignatureSpan">dominos.</span>MenuItem
+        <span class="apidocSignatureSpan">(menuData)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">MenuItem = function (menuData) {
+    if(!menuData) menuData={};
+
+    this.menuData = menuData;
+    this.categories = [];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.MenuItem.prototype" id="apidoc.module.dominos.MenuItem.prototype">module dominos.MenuItem.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuItem.prototype.getCategories" id="apidoc.element.dominos.MenuItem.prototype.getCategories">
+        function <span class="apidocSignatureSpan">dominos.MenuItem.prototype.</span>getCategories
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getCategories = function () {
+    return this.categories;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuItem.prototype.getCode" id="apidoc.element.dominos.MenuItem.prototype.getCode">
+        function <span class="apidocSignatureSpan">dominos.MenuItem.prototype.</span>getCode
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getCode = function () {
+    return this.menuData.Code;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuItem.prototype.getDescription" id="apidoc.element.dominos.MenuItem.prototype.getDescription">
+        function <span class="apidocSignatureSpan">dominos.MenuItem.prototype.</span>getDescription
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getDescription = function () {
+    return this.menuData.Description;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuItem.prototype.getName" id="apidoc.element.dominos.MenuItem.prototype.getName">
+        function <span class="apidocSignatureSpan">dominos.MenuItem.prototype.</span>getName
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getName = function () {
+    return this.menuData.Name;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.MenuItem.prototype.setCategories" id="apidoc.element.dominos.MenuItem.prototype.setCategories">
+        function <span class="apidocSignatureSpan">dominos.MenuItem.prototype.</span>setCategories
+        <span class="apidocSignatureSpan">(categories)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">setCategories = function (categories) {
+    return this.categories = categories;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.Order" id="apidoc.module.dominos.Order">module dominos.Order</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Order.Order" id="apidoc.element.dominos.Order.Order">
+        function <span class="apidocSignatureSpan">dominos.</span>Order
+        <span class="apidocSignatureSpan">(parameters)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Order = function (parameters) {
+  if(!parameters){
+      parameters={}
+  }
+  //default order
+  this.Address = '';
+  this.Coupons = [];
+  this.CustomerID = '';
+  this.Email = '';
+  this.Extension = '';
+  this.FirstName = '';
+  this.LastName = '';
+  this.LanguageCode = 'en';
+  this.OrderChannel = 'OLO';
+  this.OrderID = '';
+  this.OrderMethod = 'Web';
+  this.OrderTaker = null;
+  this.Payments = [];
+  this.Phone = '';
+  this.Products = [];
+  this.Market = '';
+  this.Currency = '';
+  this.ServiceMethod = parameters.deliveryMethod || 'Delivery';
+  this.SourceOrganizationURI = urls.sourceUri;
+  this.StoreID = parameters.storeID||'';
+  this.Tags = {};
+  this.Version = '1.0';
+  this.NoCombine = true;
+  this.Partners = {};
+  this.NewUser = true;
+  this.metaData = {};
+  this.Amounts = {};
+  this.BusinessDate = '';
+  this.EstimatedWaitMinutes = '';
+  this.PriceOrderTime = '';
+  this.AmountsBreakdown;
+
+  if(parameters['customer']) {
+    var Customer = parameters.customer;
+
+    this.Address = Customer.address;
+    this.CustomerID = Customer.ID;
+    this.Email = Customer.email;
+    this.FirstName = Customer.firstName;
+    this.LastName = Customer.lastName;
+    this.Phone = Customer.phone;
+    return this;
+  }
+  if(parameters['Order'] || parameters['order']) {  //Used to initialize order object from Dominos results (Also handy for initializing
+ from DB)
+    var prevOrder = parameters.Order;
+    var Customer = parameters.customer;
+
+    this.Address = (Customer)? (
+        (Customer.address)? Customer.address : prevOrder.Address
+    ):prevOrder.Address;
+
+    this.CustomerID = (Customer)? (
+        (Customer.address)? Customer.ID : prevOrder.CustomerID
+    ):prevOrder.CustomerID;
+
+    this.Email = (Customer)? (
+        (Customer.address)? Customer.email : prevOrder.Email
+    ):prevOrder.Email;
+
+    this.FirstName = (Customer)? (
+        (Customer.address)? Customer.firstName : prevOrder.FirstName
+    ):prevOrder.FirstName;
+
+    this.LastName = (Customer)? (
+        (Customer.address)? Customer.lastName : prevOrder.LastName
+    ):prevOrder.LastName;
+
+    this.OrderID = prevOrder.OrderID;
+    this.Products = prevOrder.Products;
+    this.Market = prevOrder.Market;
+    this.Currency = prevOrder.Currency;
+    this.StoreID = prevOrder.StoreID;
+    this.Amounts = prevOrder.Amounts || {};
+    this.BusinessDate = prevOrder.BusinessDate || '';
+    this.EstimatedWaitMinutes = prevOrder.EstimatedWaitMinutes || '';
+    this.PriceOrderTime = prevOrder.PriceOrderTime || '';
+    this.AmountsBreakdown = prevOrder.AmountsBreakdown || {};
+
+    return this;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+firstName: 'Barack',
+lastName: 'Obama',
+address: '700 Pennsylvania Avenue, Washington, DC',
+email: 'barack@whitehouse.gov'
+      }
+  );
+
+  var order = new pizzapi.<span class="apidocCodeKeywordSpan">Order</span>(
+      {
+customer: thePresident,
+
+//optional set the store ID right away
+storeID: myStore.ID,
+
+deliveryMethod: 'Delivery' //(or 'Carryout')
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.Order.prototype" id="apidoc.module.dominos.Order.prototype">module dominos.Order.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Order.prototype.PaymentObject" id="apidoc.element.dominos.Order.prototype.PaymentObject">
+        function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>PaymentObject
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">PaymentObject = function (){
+    Object.defineProperties(
+        this,
+        {
+            "Type": {
+                writable:false,
+                enumerable:true,
+                value:"CreditCard"
+            },
+            "Amount":  {
+                writable:true,
+                enumerable:true,
+                value:0
+            },
+            "Number":  {
+                writable:true,
+                enumerable:true,
+                value:""
+            },
+            "CardType":  {
+                writable:true,
+                enumerable:true,
+                value:""//uppercase
+            },
+            "Expiration":  {
+                writable:true,
+                enumerable:true,
+                value:""//digits only
+            },
+            "SecurityCode":  {
+                writable:true,
+                enumerable:true,
+                value:""
+            },
+            "PostalCode":  {
+                writable:true,
+                enumerable:true,
+                value:""
+            }
+        }
+    );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```javascript
+
+var pizzapi = require('dominos');
+
+var cardNumber = '4100123422343234';
+
+var cardInfo = new order.<span class="apidocCodeKeywordSpan">PaymentObject</span>();
+cardInfo.Amount = order.Amounts.Customer;
+cardInfo.Number = cardNumber;
+cardInfo.CardType = order.validateCC(cardNumber);
+cardInfo.Expiration = '0115';//  01/15 just the numbers "01/15".replace(/\D/g,'');
+cardInfo.SecurityCode = '777';
+cardInfo.PostalCode = '90210'; // Billing Zipcode
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Order.prototype.addCoupon" id="apidoc.element.dominos.Order.prototype.addCoupon">
+        function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>addCoupon
+        <span class="apidocSignatureSpan">(Coupon)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addCoupon = function (Coupon) { //Add coupon to Order
+    this.Coupons.push(Coupon)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Order.prototype.addItem" id="apidoc.element.dominos.Order.prototype.addItem">
+        function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>addItem
+        <span class="apidocSignatureSpan">(Item)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">addItem = function (Item) { //Add product to Order
+    this.Products.push(Item)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```
+
+### Adding a product to the order :
+
+```javascript
+
+order.<span class="apidocCodeKeywordSpan">addItem</span>(
+    new pizzapi.Item(
+        {
+            code: '14SCREEN',
+            options: [],
+            quantity: 1
+        }
+    )
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Order.prototype.mergeResponse" id="apidoc.element.dominos.Order.prototype.mergeResponse">
+        function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>mergeResponse
+        <span class="apidocSignatureSpan">(callback, response)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">mergeResponse = function (callback, response){
+    for(var key in response.result.Order){
+        if(util.isArray(response.result.Order[key])&amp;&amp;!response.result.Order[key].length){
+            continue;
+        }
+        this[key]=response.result.Order[key];
+    }
+    //console.log(util.inspect(this.Products, { showHidden: true, depth: 5 }));
+    if(callback){
+        callback(response);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Order.prototype.place" id="apidoc.element.dominos.Order.prototype.place">
+        function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>place
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">place = function (callback) {
+  if(!this.Products || !callback) {
+      if(callback) {
+          callback({
+              success: false,
+              message: 'At least one product must be added!'
+          })
+      }
+  }
+
+  var stringified = JSON.stringify({
+    'Order' : this
+  });
+
+  httpJson.post(urls.order.place, stringified, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  cardInfo.CardType = order.validateCC(cardNumber);
+  cardInfo.Expiration = '0115';//  01/15 just the numbers "01/15".replace(/\D/g,'');
+  cardInfo.SecurityCode = '777';
+  cardInfo.PostalCode = '90210'; // Billing Zipcode
+
+  order.Payments.push(cardInfo);
+
+  order.<span class="apidocCodeKeywordSpan">place</span>(
+      function(result) {
+          console.log("Order placed!");
+      }
+  );
+
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Order.prototype.price" id="apidoc.element.dominos.Order.prototype.price">
+        function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>price
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">price = function (callback) {
+  if(!this.Products || !callback) {
+    if(callback) {
+      callback({
+        success: false,
+        message: 'At least one Item must be added!'
+      });
+    }
+    return;
+  }
+
+  var stringified = JSON.stringify({
+    'Order' : this
+  });
+
+  httpJson.post(urls.order.price, stringified, this.mergeResponse.bind(this,callback));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+```
+
+### Price an Order
+
+```javascript
+
+  order.<span class="apidocCodeKeywordSpan">price</span>(
+      function(result) {
+          console.log("Price!")
+      }
+  );
+
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Order.prototype.removeCoupon" id="apidoc.element.dominos.Order.prototype.removeCoupon">
+        function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>removeCoupon
+        <span class="apidocSignatureSpan">(Coupon)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeCoupon = function (Coupon) { //Remove coupon from Order
+    var index = this.Coupons.indexOf(Coupon);
+    if (index != -1) {
+        this.Coupons.splice(index, 1);
+    }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Order.prototype.removeItem" id="apidoc.element.dominos.Order.prototype.removeItem">
+        function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>removeItem
+        <span class="apidocSignatureSpan">(Item)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">removeItem = function (Item) {  //Remove product from Order
+  var index = this.Products.indexOf(Item);
+  if(index != -1) {
+    this.Products.splice(index, 1);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Order.prototype.validate" id="apidoc.element.dominos.Order.prototype.validate">
+        function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>validate
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validate = function (callback) {  //Validate Order
+  if(!this.Products || !callback) {
+    if(callback) {
+      callback({
+        success: false,
+        message: 'At least one Item must be added!'
+      });
+    }
+    return;
+  }
+
+  //Blame Dominos, this isn't my doing.
+  var stringified = JSON.stringify({
+    'Order' : this
+  });
+
+  httpJson.post(urls.order.validate, stringified, this.mergeResponse.bind(this,callback));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+
+### Validating an Order
+This step is **Strongly** recommended
+
+```javascript
+
+  order.<span class="apidocCodeKeywordSpan">validate</span>(
+      function(result) {
+          console.log("We did it!");
+      }
+  );
+
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Order.prototype.validateCC" id="apidoc.element.dominos.Order.prototype.validateCC">
+        function <span class="apidocSignatureSpan">dominos.Order.prototype.</span>validateCC
+        <span class="apidocSignatureSpan">(number)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validateCC = function (number){
+    var re = {
+        visa        : /^4[0-9]{12}(?:[0-9]{3})?$/,
+        mastercard  : /^5[1-5][0-9]{14}$/,
+        amex        : /^3[47][0-9]{13}$/,
+        diners      : /^3(?:0[0-5]|[68][0-9])[0-9]{11}$/,
+        discover    : /^6(?:011|5[0-9]{2})[0-9]{12}$/,
+        jcb         : /^(?:2131|1800|35\d{3})\d{11}$/,
+        enroute     : /^(?:2014|2149)\d{11}$/
+    };
+
+    if (re.visa.test(number))
+        return 'VISA';
+
+    if (re.mastercard.test(number))
+        return 'MASTERCARD';
+
+    if (re.amex.test(number))
+        return 'AMEX';
+
+    if (re.diners.test(number))
+        return 'DINERS';
+
+    if (re.discover.test(number))
+        return 'DISCOVER';
+
+    if (re.jcb.test(number))
+        return 'JCB';
+
+    if (re.enroute.test(number))
+        return 'JCB';
+
+    return "";
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var pizzapi = require('dominos');
+
+var cardNumber = '4100123422343234';
+
+var cardInfo = new order.PaymentObject();
+cardInfo.Amount = order.Amounts.Customer;
+cardInfo.Number = cardNumber;
+cardInfo.CardType = order.<span class="apidocCodeKeywordSpan">validateCC</span>(cardNumber);
+cardInfo.Expiration = '0115';//  01/15 just the numbers "01/15".replace(/\D/g,'');
+cardInfo.SecurityCode = '777';
+cardInfo.PostalCode = '90210'; // Billing Zipcode
+
+order.Payments.push(cardInfo);
+
+order.place(
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.Store" id="apidoc.module.dominos.Store">module dominos.Store</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Store.Store" id="apidoc.element.dominos.Store.Store">
+        function <span class="apidocSignatureSpan">dominos.</span>Store
+        <span class="apidocSignatureSpan">(parameters)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Store = function (parameters) {
+    this.ID = parameters.ID;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+|--------|----|-------|--------|
+|ID      |Integer|null|true    |
+
+```javascript
+
+//Get Store Info for Store #4336
+var pizzapi = require('dominos');
+var myStore = new pizzapi.<span class="apidocCodeKeywordSpan">Store</span>();
+myStore.ID=4336;
+
+myStore.getInfo(
+    function(storeData){
+        console.log(storeData);
+    }
+);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.Store.prototype" id="apidoc.module.dominos.Store.prototype">module dominos.Store.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Store.prototype.getFriendlyNames" id="apidoc.element.dominos.Store.prototype.getFriendlyNames">
+        function <span class="apidocSignatureSpan">dominos.Store.prototype.</span>getFriendlyNames
+        <span class="apidocSignatureSpan">(callback, lang)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getFriendlyNames = function (callback, lang) {
+  if( !this.ID || !callback){
+      if(callback)
+          callback({
+              success: false,
+              message: 'A callback is required to get a store menu'
+          });
+      return;
+  }
+
+  if(!lang)
+      lang = 'en';
+
+  var url = urls.store.menu.replace('${storeID}', this.ID)
+      .replace('${lang}', lang);
+
+  httpJson.get(url, function(result) {
+    var itemMapping = [];
+    var keys = Object.keys(result.result.Variants);
+    keys.forEach(function(key) {
+      var json = {};
+      json[result.result.Variants[key].Name] = key
+      itemMapping.push(json);
+    });
+
+    callback({ success: true, result: itemMapping });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+
+  //Get friendly name menu for Store #4336
+  var pizzapi = require('dominos');
+  var myStore = new pizzapi.Store();
+  myStore.ID = 4336;
+
+  myStore.<span class="apidocCodeKeywordSpan">getFriendlyNames</span>(
+      function(storeData){
+          console.log(storeData);
+      }
+  );
+
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Store.prototype.getInfo" id="apidoc.element.dominos.Store.prototype.getInfo">
+        function <span class="apidocSignatureSpan">dominos.Store.prototype.</span>getInfo
+        <span class="apidocSignatureSpan">(callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getInfo = function (callback) {
+    if( !this.ID || !callback){
+        if(callback)
+            callback(
+                {
+                    success: false,
+                    message: 'A callback is required to get store info'
+                }
+            );
+        return;
+    }
+
+    httpJson.get(urls.store.info.replace('${storeID}', this.ID), callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+
+  //Get Store Info for Store #4336
+  var pizzapi = require('dominos');
+  var myStore = new pizzapi.Store();
+  myStore.ID=4336;
+
+  myStore.<span class="apidocCodeKeywordSpan">getInfo</span>(
+      function(storeData){
+          console.log(storeData);
+      }
+  );
+
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Store.prototype.getMenu" id="apidoc.element.dominos.Store.prototype.getMenu">
+        function <span class="apidocSignatureSpan">dominos.Store.prototype.</span>getMenu
+        <span class="apidocSignatureSpan">(callback, lang, noCache)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getMenu = function (callback, lang, noCache) {
+    if (this.cachedMenu &amp;&amp; !noCache) {
+        callback(this.cachedMenu); //TODO as below, break compatibility by removing first parameter
+        return;
+    }
+    if( !this.ID || !callback){
+        if(callback)
+            callback({
+                success: false,
+                message: 'A callback is required to get a store menu'
+            });
+        return;
+    }
+
+    if(!lang)
+        lang = 'en';
+
+    var url = urls.store.menu.replace('${storeID}', this.ID)
+        .replace('${lang}', lang);
+
+
+    httpJson.get(url,(function(jsonObj) {
+        this.cachedMenu = new Menu(jsonObj);
+        callback(this.cachedMenu); //TODO break compatibility by removing first parameter
+    }).bind(this));
+
+<span class="apidocCodeCommentSpan">    /*
+    httpJson.get(
+        url,
+        (function(response) {
+            fs.writeFile('sampleResp/menu'+this.ID+'.json', JSON.stringify(response, null, 4), function (err) {
+                if (err) throw err;
+                console.log('It\'s saved!');
+            });
+        }).bind(this)
+    );
+    */
+</span>}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```javascript
+
+  //Get Menu for Store #4336
+  var pizzapi = require('dominos');
+  var myStore = new pizzapi.Store();
+  myStore.ID = 4336;
+
+  myStore.<span class="apidocCodeKeywordSpan">getMenu</span>(
+      function(storeData){
+          console.log(storeData);
+      }
+  );
+
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.Track" id="apidoc.module.dominos.Track">module dominos.Track</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Track.byId" id="apidoc.element.dominos.Track.byId">
+        function <span class="apidocSignatureSpan">dominos.Track.</span>byId
+        <span class="apidocSignatureSpan">(storeID, orderKey, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">byId = function (storeID, orderKey, callback) {
+    if(!storeID || !orderKey || !callback){
+        if(callback)
+            callback({
+                success: false,
+                message: 'storeID, orderKey, and callback are all required to get pizza info using the orderKey'
+            });
+        return;
+    }
+
+    this.byUrl(urls.track + 'StoreID=' + storeID + '&amp;OrderKey=' + orderKey, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+|storeID|sting or int|null|true|
+|callback|function to pass the api result to|null|true|
+
+```javascript
+
+var pizzapi = require('dominos');
+
+pizzapi.Track.<span class="apidocCodeKeywordSpan">byId</span>(
+    123456,
+    12345,
+    function(pizzaData){
+        console.log(pizzaData)
+    }
+);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Track.byPhone" id="apidoc.element.dominos.Track.byPhone">
+        function <span class="apidocSignatureSpan">dominos.Track.</span>byPhone
+        <span class="apidocSignatureSpan">(phone, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">byPhone = function (phone, callback) {
+    if( !phone || !callback) {
+        if(callback) {
+            callback({
+                success: false,
+                message: 'Phone is required!'
+            });
+        }
+        return;
+    }
+
+    this.byUrl(urls.track + 'Phone=' + phone, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+|phone|Phone number string or int|null|true|
+|callback|function to pass the api result to|null|true|
+
+```javascript
+
+  var pizzapi = require('dominos');
+
+  pizzapi.Track.<span class="apidocCodeKeywordSpan">byPhone</span>(
+      2024561111,
+      function(pizzaData){
+          console.log(pizzaData);
+      }
+  );
+
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Track.byUrl" id="apidoc.element.dominos.Track.byUrl">
+        function <span class="apidocSignatureSpan">dominos.Track.</span>byUrl
+        <span class="apidocSignatureSpan">(url, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">byUrl = function (url, callback){
+    request.get(
+        url,
+        function (error, response, body) {
+            if (error) {
+                callback({
+                    success: false,
+                    message: error
+                });
+                return;
+            }
+
+            if (response.statusCode !== 200){
+                callback({
+                    success: false,
+                    message:'HTML Status Code Error ' + response.statusCode
+                });
+                return;
+            }
+
+            var result = parser.toJson(
+                body,
+                {
+                    coerce: false,
+                    sanitize: false,
+                    object: true,
+                    trim: false
+                }
+            );
+
+            if(!result['soap:Envelope']){
+                callback({
+                    success: false,
+                    message: 'API soap:Envelope not present',
+                    data: result
+                });
+                return;
+            }
+
+            if(!result['soap:Envelope']['soap:Body']){
+                callback({
+                    success: false,
+                    message: 'API soap:Body not present',
+                    data: result
+                });
+                return;
+            }
+
+            if(!result['soap:Envelope']['soap:Body'].GetTrackerDataResponse){
+                callback({
+                    success: false,
+                    message:'API GetTrackerDataResponse not present',
+                    data: result
+                });
+                return;
+            }
+
+            callback({
+                orders: result['soap:Envelope']['soap:Body'].GetTrackerDataResponse.OrderStatuses,
+                query: result['soap:Envelope']['soap:Body'].GetTrackerDataResponse.Query
+            });
+        }
+    );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.Util" id="apidoc.module.dominos.Util">module dominos.Util</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.Util.findNearbyStores" id="apidoc.element.dominos.Util.findNearbyStores">
+        function <span class="apidocSignatureSpan">dominos.Util.</span>findNearbyStores
+        <span class="apidocSignatureSpan">(address, pickUpType, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">findNearbyStores = function (address, pickUpType, callback) {
+    if(typeof pickUpType == 'function'){
+        callback=pickUpType;
+        pickUpType='Delivery';
+    }
+    if(!address || !callback) {
+        if(!callback){
+            throw('invalid findNearbyStores request. address and callback are required at a minimum.');
+        }
+        if(callback) {
+            callback(
+                {
+                    success: false,
+                    message: 'At least a partial address (minimum accepted is zipcode) is required to find stores'
+                }
+            );
+        }
+        return false;
+    }
+
+    var address = new Address(address)
+    var addressLines=address.getAddressLines();
+
+    var url = urls.store.find.replace(
+        '${line1}',
+        encodeURI(
+          addressLines.line1
+        )
+    ).replace(
+        '${line2}',
+        encodeURI(
+          addressLines.line2
+        )
+    ).replace(
+        '${type}',
+        pickUpType||'Delivery'
+    );
+
+    httpJson.get(url, callback);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+### By Postal Code
+***this yields the least accurate information***
+
+```javascript
+
+var pizzapi = require('dominos');
+
+pizzapi.Util.<span class="apidocCodeKeywordSpan">findNearbyStores</span>(
+    '63102',
+    'Delivery',
+    function(storeData){
+        console.log(storeData);
+    }
+);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.dominos.http_json" id="apidoc.module.dominos.http_json">module dominos.http_json</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.http_json.get" id="apidoc.element.dominos.http_json.get">
+        function <span class="apidocSignatureSpan">dominos.http_json.</span>get
+        <span class="apidocSignatureSpan">(url, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">get = function (url, callback){
+    var requestBody = {
+        uri: url,
+        headers: {
+            'Referer': urls.referer
+        }
+    };
+    http.get(requestBody, function (error, res, body) {
+            if (error){  //If request errored out.
+                callback({
+                    success: false,
+                    message: error
+                });
+                return;
+            }
+            if (res.statusCode !== 200){  //If request didn't error but response isn't status code 200.
+                callback({
+                    success: false,
+                    message: 'HTML Status Code Error ' + res.statusCode
+                });
+                return;
+            }
+
+            try {
+                var parsed = JSON.parse(body);
+            }
+            catch(error){
+              console.log(error);
+              return callback({
+                  success: false,
+                  message: error
+              });
+            }
+
+            return callback({
+                success: true,
+                result: parsed
+            });
+        }
+    );
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+module.exports.get = function(url, callback){
+var requestBody = {
+    uri: url,
+    headers: {
+        'Referer': urls.referer
+    }
+};
+http.<span class="apidocCodeKeywordSpan">get</span>(requestBody, function (error, res, body) {
+        if (error){  //If request errored out.
+            callback({
+                success: false,
+                message: error
+            });
+            return;
+        }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.dominos.http_json.post" id="apidoc.element.dominos.http_json.post">
+        function <span class="apidocSignatureSpan">dominos.http_json.</span>post
+        <span class="apidocSignatureSpan">(url, req, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">post = function (url, req, callback) {
+    if(typeof req !=  'string')
+        req = JSON.stringify(req);
+
+    var requestBody = {
+        uri: url,
+        headers: {
+            Referer: urls.referer,
+            'Content-Type': 'application/json'
+        },
+        body: req
+    };
+    http.post(requestBody, function (error, res, body) {
+      if (error) {
+          return callback({
+            success: false,
+            message: error
+          });
+      }
+
+      if (res.statusCode !== 200) {
+          return callback({
+              success: false,
+              message: 'HTML Status Code Error ' + res.statusCode
+          });
+      }
+
+      try {
+          var parsed = JSON.parse(body);
+      }
+      catch(error){
+        console.log(error);
+        return callback({
+            success: false,
+            message: error
+        });
+      }
+
+      return callback({
+          success: true,
+          result: parsed
+      });
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    uri: url,
+    headers: {
+        Referer: urls.referer,
+        'Content-Type': 'application/json'
+    },
+    body: req
+};
+http.<span class="apidocCodeKeywordSpan">post</span>(requestBody, function (error, res, body) {
+  if (error) {
+      return callback({
+        success: false,
+        message: error
+      });
+  }
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
