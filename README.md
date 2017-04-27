@@ -1,6 +1,6 @@
 # npmdoc-dominos
 
-#### api documentation for  [dominos (v2.1.1)](https://github.com/RIAEvangelist/node-dominos-pizza-api)  [![npm package](https://img.shields.io/npm/v/npmdoc-dominos.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-dominos) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-dominos.svg)](https://travis-ci.org/npmdoc/node-npmdoc-dominos)
+#### basic api documentation for  [dominos (v2.1.1)](https://github.com/RIAEvangelist/node-dominos-pizza-api)  [![npm package](https://img.shields.io/npm/v/npmdoc-dominos.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-dominos) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-dominos.svg)](https://travis-ci.org/npmdoc/node-npmdoc-dominos)
 
 #### node js API for Domino's pizza
 
@@ -105,7 +105,8 @@
         "start": "node example/commandline-pizza/dominos-commandline-pizza.js",
         "test": "mocha"
     },
-    "version": "2.1.1"
+    "version": "2.1.1",
+    "bin": {}
 }
 ```
 
